@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 Apr, 2014 8:22:08 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.rule.safety.pojo.Herf" table="HERF">
+        <id name="reportID" type="java.lang.Integer">
+            <column name="REPORTID" />
+            <generator class="native" />
+        </id>
+        <property name="report" type="java.lang.String">
+            <column name="REPORT" />
+        </property>
+        <property name="evidence" type="java.lang.String">
+            <column name="EVIDENCE" />
+        </property>
+        <property name="discoveryDate" type="java.lang.String">
+            <column name="DISCOVERYDATE" />
+        </property>
+        <property name="discoveryTime" type="java.lang.String">
+            <column name="DISCOVERYTIME" />
+        </property>
+        <property name="reportDesc" type="java.lang.String">
+            <column name="REPORTDESC" />
+        </property>
+        <property name="reportLocation" type="java.lang.String">
+            <column name="REPORTLOCATION" />
+        </property>
+        <property name="category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+        <property name="categoryDesc" type="java.lang.String">
+            <column name="CATEGORYDESC" />
+        </property>
+        <property name="patients" type="java.lang.Integer">
+            <column name="PATIENTS" />
+        </property>
+        <property name="patientName" type="java.lang.String">
+            <column name="PATIENTNAME" />
+        </property>
+        <property name="patientDob" type="java.lang.String">
+            <column name="PATIENTDOB" />
+        </property>
+        <property name="medRecordNo" type="java.lang.Integer">
+            <column name="MEDRECORDNO" />
+        </property>
+        <property name="patientGender" type="java.lang.String">
+            <column name="PATIENTGENDER" />
+        </property>
+        <property name="nPatientName" type="java.lang.String" access="field">
+            <column name="NPATIENTNAME" />
+        </property>
+        <property name="nPatientDob" type="java.lang.String" access="field">
+            <column name="NPATIENTDOB" />
+        </property>
+        <property name="nMedRecordNo" type="java.lang.Integer" access="field">
+            <column name="NMEDRECORDNO" />
+        </property>
+        <property name="nPatientGender" type="java.lang.String" access="field">
+            <column name="NPATIENTGENDER" />
+        </property>
+        <property name="reportDate" type="java.lang.String">
+            <column name="REPORTDATE" />
+        </property>
+        <property name="anonymousReporter" type="java.lang.String">
+            <column name="ANONYMOUSREPORTER" />
+        </property>
+        <property name="reporterName" type="java.lang.String">
+            <column name="REPORTERNAME" />
+        </property>
+        <property name="telephoneNumber" type="java.lang.String">
+            <column name="TELEPHONENUMBER" />
+        </property>
+        <property name="reporterUsername" type="java.lang.String">
+            <column name="REPORTERUSERNAME" />
+        </property>
+        <property name="reporterJob" type="java.lang.String">
+            <column name="REPORTERJOB" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="COMMENT" />
+        </property>
+        <property name="actionTaken" type="java.lang.String">
+            <column name="ACTIONTAKEN" />
+        </property>
+        <property name="complaintOn" type="java.lang.String">
+            <column name="COMPLAINTON" />
+        </property>
+        <property name="forwarded" type="java.lang.String">
+            <column name="FORWARDED" />
+        </property>
+        <property name="task" type="java.lang.String">
+            <column name="TASK" />
+        </property>
+    </class>
+</hibernate-mapping>

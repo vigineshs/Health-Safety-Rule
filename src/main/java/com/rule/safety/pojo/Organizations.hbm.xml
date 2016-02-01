@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 Apr, 2014 8:22:08 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.rule.safety.pojo.Organizations" table="ORGANIZATIONS">
+        <id name="orgID" type="java.lang.Integer">
+            <column name="ORGID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cityID" type="java.lang.Integer">
+            <column name="CITYID" />
+        </property>
+        <property name="stateID" type="java.lang.Integer" access="field">
+            <column name="STATEID" />
+        </property>
+        <property name="orgname" type="java.lang.String">
+            <column name="ORGNAME" />
+        </property>
+    </class>
+</hibernate-mapping>
